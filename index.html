@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="body-element makeWhite">
+
+    <header class="nav-bar">
+        <i id="toggle-icon" class="fas fa-toggle-on"></i>
+    </header>
+
+    <main>
+        <section class="heading">
+            <h1>Music Player</h1>
+        </section>
+
+        <section id="music-section">
+
+            <aside class="lhs-music-section music-section-normalMode">
+                <div class="filter-heading">
+                    <label for="dropdown">Filter By Genre:</label>
+                    <select name="dropdown" id="dropdown">
+                        <option value="all" selected>All</option>
+                        <option value="rock">Rock</option>
+                        <option value="sufi">Sufi</option>
+                        <option value="pop">Pop</option>
+                        <option value="soft">Soft</option>
+                    </select>
+                </div>
+
+                <div class="all-songs-section">
+                    <h2 class="heading-all-songs">All Songs</h2>
+                    <input id="search-music-input" type="text" placeholder="Search By Song name or Artist name...">
+                    <ul class="all-songs-list"></ul>
+                </div>
+            </aside>
+
+            <section class="mid-music-player music-section-normalMode">
+                <div class="image_section">
+                    <img src="./images/ap.jpg" class="image_section_image" alt="Music Image">
+                    <div class="display-prev-image">
+                        <!-- Previous images -->
+                    </div>
+                    <h2 id="music-name"></h2>
+                    <p id="artist-Name"></p>
+                </div>
+
+                <div class="audio_section">
+                    <audio controls>
+                        <source id="source_audio" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="changeMusic">
+                    <div class="icons">
+                        <i id="previousIcon" class="fas fa-chevron-left music-change-button"></i>
+                        <i id="nextIcon" class="fas fa-chevron-right music-change-button"></i>
+                    </div>
+                    <button id="music-add-to-playlist">Add to Playlist</button>
+                </div>
+            </section>
+
+            <aside class="rhs-music-player music-section-normalMode">
+                <div class="createPlaylist_heading">
+                    <button id="search-playlist">Search Playlist</button>
+                    <input type="text" id="input-create-playlist" placeholder="Playlist Name">
+                    <button id="create-playlist-button">Create Playlist</button>
+                </div>
+
+                <div id="playlist">
+                    <div class="show-search-result"></div>
+                    <section id="all-playlist">
+                        <h2 id="all-playlist-heading">Current Playlist</h2>
+                        <ul class="all-playlist-ul"></ul>
+                    </section>
+
+                    <section id="my-created-playlist">
+                        <h2 id="my-created-playlist-heading">My Playlist</h2>
+                        <ul class="my-playlist-ul"></ul>
+                    </section>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>

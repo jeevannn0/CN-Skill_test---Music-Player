@@ -1,0 +1,14 @@
+Features :
+
+    1. Toggle Button : to change background and some other css.
+    2. Filter : Filter songs on the basis of genre/artist/songs
+    3. Search song : type the song and press enter.
+    4. play music : click on any of the image or any of the music-button to play.
+    5. Next and previous button to move forward and backward.
+    6. Add to playlist button used to add that music to current playlist.
+    7. create and search playlist 
+    8. Only those music in the playlist that are added using "add playlist" can be searched now, but custom playlists can also be searched
+    by some simple changes.
+    8.Delete Playlist : click on the delete icon.
+
+    That's all about the features and attributes of the Music Player
